@@ -45,7 +45,7 @@ class Uploads {
             for (const file of req.files) {
                 files.push({
                     mimetype: file.mimetype,
-                    url: `${config.domain}/${file.filename}`,
+                    url: "${config.domain}/${file.filename}",
                     timestamp: Date.now()
                 });
             }
